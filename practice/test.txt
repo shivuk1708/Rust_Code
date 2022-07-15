@@ -1,0 +1,10 @@
+components of hse
+components of Some(PubSubData { publish: Some({"publisher": "egomotion"}), subscribe: None })
+components of e2e-preprocessor
+components of None
+components of e2e-python-tensorflow
+components of Some(PubSubData { publish: Some({"cuboid_publisher": "e2e", "parknet_publisher": "e2e_parknet", "semseg_publisher": "e2e_semseg", "latency_publisher": "e2e_latency", "output_publisher": "network_output"}), subscribe: Some([SubscribeData { topic: "network_input", dtype: None }]) })
+components of e2e-tracker
+components of Some(PubSubData { publish: Some({"publisher": "tracker", "detection_publisher": "detections"}), subscribe: Some([SubscribeData { topic: "e2e", dtype: Some(CuboidList) }, SubscribeData { topic: "egomotion", dtype: Some(Egomotion) }]) })
+components of harp
+components of Some(PubSubData { publish: Some({"publisher": "harp"}), subscribe: Some([SubscribeData { topic: "network_input", dtype: None }, SubscribeData { topic: "network_output", dtype: None }, SubscribeData { topic: "egomotion", dtype: None }]) })
